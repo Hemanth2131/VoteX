@@ -1,0 +1,8 @@
+# Ignore auto-generated and dependency files for language stats
+node_modules/* linguist-vendored
+dist/* linguist-vendored
+*.d.ts linguist-vendored
+tsconfig.json linguist-vendored
+vite.config.ts linguist-vendored
+tailwind.config.ts linguist-vendored
+postcss.config.ts linguist-vendored
