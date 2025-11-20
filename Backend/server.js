@@ -7,12 +7,11 @@ import userRoutes from "./routes/userRoutes.js";
 import candidateRoutes from "./routes/candidateRoutes.js";
 
 
-dotenv.config(); // must be at the very top
+dotenv.config(); 
 
 const app = express();
 app.use(cors());
-app.use(express.json()); // ✅ added middleware
-
+app.use(express.json());   
 
 app.use("/api/users", userRoutes);
 app.use("/api/candidates", candidateRoutes);

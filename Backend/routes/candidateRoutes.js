@@ -5,11 +5,11 @@ import { addCandidate, getAllCandidates, getCandidateById, voteCandidate,getResu
 
 const router = express.Router();
 
-// Candidate routes
+
 router.post("/add", authMiddleware, addCandidate);
-router.get("/",  getAllCandidates);                         // anyone can view
-router.get("/results",  getResults);                   // anyone can view
-router.get("/:id",  getCandidateById);                      // anyone can view
-router.post("/vote", authMiddleware, voteCandidate);       // voters only
+router.get("/",  getAllCandidates);                        
+router.get("/results",  getResults);                   
+router.get("/:id",  getCandidateById);                     
+router.post("/vote", authMiddleware, voteCandidate);      
 
 export default router;

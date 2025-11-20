@@ -1,6 +1,0 @@
-Voting application
-
-1.user signin/signup
-2.list the candidates by admin role
-3. vote for the candidate only once per user
-4. 
